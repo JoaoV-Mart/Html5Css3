@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagensGerais/imagens_icones/favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/paisagem_full_300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/paisagem_full_700.jpg" type="image/jpg">
+        <img src="imagens/paisagem_full_1000.jpg" alt="imagemflexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em <abbr title="HyperText Markup Language">HTML5</abbr>.</p>
+    <audio preload="metadata" controls>
+        <source src="midia/voltando-ao-primeiro-amor-luciano-subira.mp3" type="audio/mpeg">
+        <source src="midia/voltando-ao-primeiro-amor-luciano-subira.ogg" type="audio/ogg">
+        <source src="midia/voltando-ao-primeiro-amor-luciano-subira.wav" type="audio/wav">
+        <p>Infelizmente seu navegadora não consegue reproduzir áudio. <a href="midia/voltando-ao-primeiro-amor-luciano-subira.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+    <!--MP3 WAV OGG-->
+    
+    <h1>Inserindo Vídeos Hopedados Localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="500" height="400" poster="../imagensGerais/imagens_gerais_exercicios/paisagem_full.jpg" autoplay loop controls>
+        <source src="midia/video.mp4" type="video/mp4">
+        <!--<source src="midia/video.webm" type="video/webm">
+        <source src="midia/video.m4v" type="video/m4v">
+        <source src="midia/video.ogv" type="video/ogg">-->
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos. <a href="midia/video.mp4">Clique aqui para baixar o arquivo MP4.</a></p>
+    </video>
+    <!--MP4 M4V WEBM OGV-->
+
+    <h1>Inserindo Vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ryOt1kRNBek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
